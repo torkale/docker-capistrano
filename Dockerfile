@@ -21,6 +21,8 @@ RUN gem install capistrano-ext
 
 RUN apt-get clean -y
 
+ADD .bashrc .bashrc
+
 EXPOSE 22
 
 ADD start.sh start.sh
