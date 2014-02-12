@@ -14,6 +14,8 @@ RUN echo " ForwardAgent yes" >> /etc/ssh/ssh_config
 RUN echo " IdentityFile /root/.ssh/id_rsa" >> /etc/ssh/ssh_config
 RUN echo " StrictHostKeyChecking no" >> /etc/ssh/ssh_config
 
+RUN echo " AllowAgentForwarding yes" >> /etc/ssh/sshd_config
+
 RUN gem install capistrano -v 2.15.5
 RUN gem install capistrano-ext
 
