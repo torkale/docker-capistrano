@@ -1,4 +1,4 @@
-Docker Capistrano base image
+Docker Capistrano 3 image
 
 
 Usage

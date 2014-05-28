@@ -16,8 +16,7 @@ RUN echo " StrictHostKeyChecking no" >> /etc/ssh/ssh_config
 
 RUN echo " AllowAgentForwarding yes" >> /etc/ssh/sshd_config
 
-RUN gem install capistrano -v 2.15.5
-RUN gem install capistrano-ext
+RUN gem install capistrano -v 3.2.1
 
 RUN apt-get clean -y
 
